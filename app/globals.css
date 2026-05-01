@@ -5,6 +5,7 @@
   --foreground: #171717;
   --muted-foreground: #565E74;
   --primary: #547A95;
+  --secondary: #FF7A00;
   --neutral: #F1F5F9;
 }
 
@@ -13,9 +14,11 @@
   --color-foreground: var(--foreground);
   --color-mutedForeground: var(--muted-foreground);
   --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
   --color-neutral: var(--neutral);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-inter: var(--font-mono);
 }
 
 /* @media (prefers-color-scheme: dark) {
