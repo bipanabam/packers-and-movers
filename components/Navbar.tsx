@@ -7,6 +7,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MapPinIcon, Clock, PhoneIcon, MailIcon, MessageCircleMore, TruckIcon } from "lucide-react";
 
+import WhatsAppIcon from "./icons/WhatsAppIcon";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Navbar = () => {
@@ -64,8 +66,8 @@ const Navbar = () => {
                 </div>
                  <div className="flex items-center gap-2">
                     <div className="bg-white p-1 rounded-full">
-                        <MessageCircleMore className="w-5 h-5" color="#FFFFFF" fill="#547A95" />
-                    </div>
+  <WhatsAppIcon size={18} color="#547A95" />
+</div>
                     <span>WhatsApp</span>
                 </div>
                  <div className="flex items-center gap-2">

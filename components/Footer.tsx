@@ -1,6 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MapPinIcon, PhoneIcon, MailIcon, MessageCircleMore } from "lucide-react";
+import { MapPinIcon, PhoneIcon, MailIcon } from "lucide-react";
+import WhatsAppIcon from "./icons/WhatsAppIcon";
+import FacebookIcon from "./icons/FacebookIcon";
+import InstagramIcon from "./icons/InstagramIcon";
+import TiktokIcon from "./icons/TiktokIcon";
 
 const Footer = () => {
   return (
@@ -29,35 +33,17 @@ const Footer = () => {
                 <div className="flex items-center justify-center gap-5 m-2">
                     <div className="p-2 rounded-xl hover:shadow-lg hover:scale-105 transition">
                         <a href="https://facebook.com" target="_blank">
-                            <Image
-                                src="/assets/tiktok.png"
-                                alt="Facebook"
-                                width={20}
-                                height={20}
-                                className="hover:scale-110 transition"
-                            />
+                            <FacebookIcon color="#547A95"  className="w-5 h-5" />
                         </a>
                     </div>
                     <div className="p-2 rounded-xl hover:shadow-lg hover:scale-105 transition">
                         <a href="https://instagram.com" target="_blank">
-                            <Image
-                                src="/assets/instagram.png"
-                                alt="Instagram"
-                                width={20}
-                                height={20}
-                                className="hover:scale-110 transition"
-                            />
+                           <InstagramIcon color="#547A95"  className="w-5 h-5" />
                         </a>
                     </div>
                     <div className="p-2 rounded-xl hover:shadow-lg hover:scale-105 transition">
                         <a href="https://tiktok.com" target="_blank">
-                            <Image
-                                src="/assets/tiktok.png"
-                                alt="TikTok"
-                                width={20}
-                                height={20}
-                                className="hover:scale-110 transition"
-                            />
+                            <TiktokIcon color="#547A95"  className="w-5 h-5" />
                         </a>
                     </div>
                 </div>
@@ -107,7 +93,7 @@ const Footer = () => {
                     <span className="text-foreground/50">info@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-2 font-inter">
-                    <MessageCircleMore className="w-5 h-5 text-primary"/>
+                    <WhatsAppIcon color="#547A95"  className="w-5 h-5" />
                     <span className="text-foreground/50">+977 9812345678</span>
                 </div>
                 <div className="flex items-center gap-2 font-inter">
