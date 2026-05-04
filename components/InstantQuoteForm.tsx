@@ -112,7 +112,7 @@ const InstantQuoteForm = () => {
       </div>
         <button
           type="submit"
-          className="flex items-center gap-2 bg-secondary text-white px-5 py-2.5 rounded-md text-sm font-semibold whitespace-nowrap transition w-full justify-center mt-3 md:mt-0"
+          className="flex items-center justify-center gap-2 w-full bg-secondary text-white px-5 py-2.5 rounded-md text-sm font-semibold mt-3 md:mt-0 hover:cursor-pointer whitespace-nowrap transition"
         >
           <p>Get my Quote</p>
           <ArrowRight size={22} strokeWidth={1.5} />
