@@ -5,8 +5,8 @@ import { Truck, Clock, Users } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="hero" className="w-full min-h-screen">
-        <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-10 md:gap-2 w-full min-h-screen">
+    <section id="hero" className="w-full">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-10 md:gap-2">
             {/* Left */}
             <div className="flex-1 px-8">
                 <div className="flex flex-col items-start gap-5 w-full">

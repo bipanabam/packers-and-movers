@@ -66,8 +66,8 @@ const Navbar = () => {
                 </div>
                  <div className="flex items-center gap-2">
                     <div className="bg-white p-1 rounded-full">
-  <WhatsAppIcon size={18} color="#547A95" />
-</div>
+                      <WhatsAppIcon size={18} color="#547A95" />
+                    </div>
                     <span>WhatsApp</span>
                 </div>
                  <div className="flex items-center gap-2">
