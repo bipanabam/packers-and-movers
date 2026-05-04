@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import InstantQuoteForm from "@/components/InstantQuoteForm";
 import ServicesCard from "@/components/ServicesCard";
+import WhyChooseUs from "@/components/WhyChooseUs";
 import { ClockFading, House, Building, Motorbike, CarFront, PackageCheck, Move } from "lucide-react";
 
 export default function Home() {
@@ -66,9 +67,11 @@ export default function Home() {
             title="Loading / Unloading"
             description="Skilled handling of your belongings. Our team uses ergonomic tools and techniques to ensure zero damage during transit."
           />
-          
         </div>
       </div>
+
+      {/* Why choose us */}
+      <WhyChooseUs />
     </div>
   );
 }

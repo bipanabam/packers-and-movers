@@ -1,5 +1,5 @@
 import Image from "next/image"
-import GetFreeQuoteButton from "./GetFreeQuoteButton"
+import Button from "./Button";
 import CallNowButton from "./CallNowButton"
 import { Truck, Clock, Users } from "lucide-react";
 
@@ -33,7 +33,7 @@ const Hero = () => {
                     </div>
 
                     <div className="flex gap-10">
-                        <GetFreeQuoteButton />
+                        <Button title="Get free quote" />
                         <CallNowButton />
                     </div>
 
