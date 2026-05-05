@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MapPinIcon, Clock, PhoneIcon, MailIcon, MessageCircleMore, TruckIcon } from "lucide-react";
+import { MapPinIcon, Clock, PhoneIcon, MailIcon, TruckIcon } from "lucide-react";
 
 import WhatsAppIcon from "./icons/WhatsAppIcon";
 

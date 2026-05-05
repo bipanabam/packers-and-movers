@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import HowItWorks from "@/components/HowItWorks";
 import InstantQuoteForm from "@/components/InstantQuoteForm";
 import ServicesCard from "@/components/ServicesCard";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -72,6 +73,8 @@ export default function Home() {
 
       {/* Why choose us */}
       <WhyChooseUs />
+      {/* How It Works */}
+      <HowItWorks />
     </div>
   );
 }

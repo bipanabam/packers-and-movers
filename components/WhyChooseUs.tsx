@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Check, UserCheck, BadgeDollarSign, ShieldCheck, Clock, FileCheck, MapPin } from "lucide-react";
+import { UserCheck, BadgeDollarSign, ShieldCheck, Clock, FileCheck, MapPin } from "lucide-react";
 import Button from "./Button";
 
 const WhyChooseUs = () => {
