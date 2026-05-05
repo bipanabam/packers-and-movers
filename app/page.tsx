@@ -1,3 +1,4 @@
+import AreasWeServe from "@/components/AreasWeServe";
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import InstantQuoteForm from "@/components/InstantQuoteForm";
@@ -75,6 +76,8 @@ export default function Home() {
       <WhyChooseUs />
       {/* How It Works */}
       <HowItWorks />
+      {/* Areas we cover */}
+      <AreasWeServe />
     </div>
   );
 }

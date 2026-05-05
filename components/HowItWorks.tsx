@@ -138,7 +138,7 @@ const HowItWorks = () => {
             Get Free Quote
           </button>
 
-          <button className="flex items-center justify-center gap-2 px-6 py-2 bg-white text-secondary rounded-full ring-2 ring-secondary text-sm md:text-base shadow-sm hover:scale-105 transition-transform">
+          <button className="flex items-center justify-center gap-2 px-6 py-2 bg-white text-secondary rounded-full ring-2 ring-secondary text-sm md:text-sm shadow-sm hover:scale-105 transition-transform">
             Check Price
           </button>
 
