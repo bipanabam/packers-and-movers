@@ -42,7 +42,7 @@ const AreasWeServe = () => {
                         <Link 
                             href={`/${city.slug}`}
                             title={`Packers and Movers in ${city.name}`}
-                            className="flex items-center gap-2 p-3 rounded-lg border border-foreground/30 bg-white hover:border-primary hover:text-primary transition-all duration-200 group"
+                            className="flex items-center gap-2 p-3 rounded-lg border border-foreground/30 bg-white hover:border-primary hover:text-primary hover:scale-105 transition-all duration-200 group"
                         >
                             <MapPin size={16} strokeWidth={2.5} className="text-foreground/50 group-hover:text-primary transition-colors" />
                             <span className="text-sm font-medium">{city.name}</span>
@@ -61,7 +61,7 @@ const AreasWeServe = () => {
                             <Button title="Check Availability" />
                             <Link
                                 href="/"
-                                className="flex items-center justify-center gap-2 px-6 py-1 bg-white text-secondary rounded-lg ring-2 ring-secondary text-sm md:text-base font-semibold shadow-sm hover:scale-105 transition-transform"
+                                className="flex items-center justify-center gap-2 px-6 py-2 bg-white text-secondary rounded-lg ring-2 ring-secondary text-sm md:text-base font-semibold shadow-sm hover:scale-105 transition-transform"
                             >
                                 View all branches
                                 <GitBranch  size={22} strokeWidth={1.5} />
