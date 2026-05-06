@@ -128,7 +128,7 @@ const HowItWorks = () => {
         })}
       </ol>
       {/* CTA */}
-      <div className="mt-16 rounded-2xl bg-white border border-primary/20 p-6 text-center shadow-sm">
+      <div className="mt-16 rounded-2xl bg-white border border-primary/20 p-7 text-center shadow-sm">
         <p className="text-sm text-foreground/60 mb-3">
           Ready to move? Get an instant estimate or talk to our team.
         </p>

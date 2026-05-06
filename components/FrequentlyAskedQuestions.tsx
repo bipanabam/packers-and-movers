@@ -91,12 +91,12 @@ const FrequentlyAskedQuestions = () => {
             </ul>
         </div>
         <div className="text-center mt-12">
-            <p className="text-sm text-foreground/60">
+            <p className="text-sm text-foreground/60 mb-5">
                 Still unsure? Talk to our team directly.
             </p>
-            <button className="mt-4 bg-secondary text-white px-6 py-3 rounded-xl shadow-md hover:scale-105 transition">
+            <a href="tel:+977XXXXXXXXX" className="bg-secondary text-white px-6 py-3 rounded-xl shadow-md hover:scale-105 transition">
                 Call Now
-            </button>
+            </a>
         </div>
     </section>
   )

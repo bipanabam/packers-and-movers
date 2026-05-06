@@ -13,7 +13,7 @@ const ServicesCard = ({icon: Icon, title, description} : any) => {
                 <h2 className="text-lg md:text-xl text-foreground font-semibold">
                 {title}
                 </h2>
-                <p className="text-xs text-foreground/50 lg:text-sm tracking-wider">
+                <p className="text-xs text-foreground/50 lg:text-sm tracking-wide">
                 {description}
                 </p>
                 <Link href="/" className="flex items-center gap-1 text-sm font-medium text-secondary group">
