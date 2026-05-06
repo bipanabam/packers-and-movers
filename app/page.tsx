@@ -1,4 +1,5 @@
 import AreasWeServe from "@/components/AreasWeServe";
+import CustomerReview from "@/components/CustomerReview";
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import InstantQuoteForm from "@/components/InstantQuoteForm";
@@ -78,6 +79,8 @@ export default function Home() {
       <HowItWorks />
       {/* Areas we cover */}
       <AreasWeServe />
+      {/* Customer Review */}
+      <CustomerReview />
     </div>
   );
 }
