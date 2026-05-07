@@ -32,19 +32,21 @@ const Hero = () => {
                         </div>
                     </div>
                     {/* Star rating */}
-                    <div className="flex items-center gap-2 bg-secondary/10 rounded-lg px-3 py-2 w-fit border border-primary/10">
-                        <ul className="flex gap-0.5" aria-label="4.8 out of 5 stars" role="img">
-                            {[...Array(5)].map((_, i) => (
-                            <li key={i}>
-                                <Star
-                                size={13}
-                                className="text-yellow-400"
-                                fill="#facc15"
-                                />
-                            </li>
-                            ))}
-                        </ul>
-                        <span className="text-sm font-medium text-foreground">4.8 / 5</span>
+                    <div className="flex flex-col lg:flex-row items-start lg:items-center gap-2 bg-secondary/10 rounded-lg px-3 py-2 w-fit border border-primary/10">
+                        <div className="flex flex-row items-center gap-2">
+                            <ul className="flex gap-0.5" aria-label="4.8 out of 5 stars" role="img">
+                                {[...Array(5)].map((_, i) => (
+                                <li key={i}>
+                                    <Star
+                                    size={13}
+                                    className="text-yellow-400"
+                                    fill="#facc15"
+                                    />
+                                </li>
+                                ))}
+                            </ul>
+                            <span className="text-sm font-medium text-foreground">4.8 / 5</span>
+                        </div>
                         <span className="text-xs text-foreground/50">from 500+ verified Google reviews</span>
                     </div>
 
@@ -55,7 +57,7 @@ const Hero = () => {
 
                     <hr className="border-primary/30 mt-2 mb-4 w-full" />
 
-                    <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-3 w-4/5">
+                    <div className="grid md:grid-cols-3 gap-5 md:gap-10 items-start">
                         <div className="flex items-center gap-3 text-secondary">
                             <Truck size={30} />
                             <div className="flex flex-col text-[16px]">

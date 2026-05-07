@@ -8,6 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MapPinIcon, Clock, PhoneIcon, MailIcon, TruckIcon, X, Menu } from "lucide-react";
 
 import WhatsAppIcon from "./icons/WhatsAppIcon";
+import Logo from "./icons/Logo";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -97,13 +98,7 @@ const Navbar = () => {
           
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="bg-primary text-white p-2 rounded-xl">
-              <TruckIcon width={20} height={20} />
-            </div>
-            <div>
-              <p className="text-lg font-semibold text-primary leading-tight">Nepal Packers</p>
-              <p className="text-xs text-foreground/70 leading-tight">& Movers</p>
-            </div>
+            <Logo />
           </Link>
 
           {/* Desktop nav links */}
@@ -114,9 +109,11 @@ const Navbar = () => {
           </ul>
 
           {/* Desktop CTA */}
-          <button className="hidden md:block px-5 py-2 bg-secondary text-white rounded-lg text-sm font-semibold shadow-sm hover:scale-105 transition">
+          <Link 
+            href="/get-quote" 
+            className="hidden md:block px-5 py-2 bg-secondary text-white rounded-lg text-sm font-semibold shadow-sm hover:scale-105 transition">
             Get Free Quote
-          </button>
+          </Link>
 
           {/* Mobile right side */}
           <div className="flex md:hidden items-center gap-3">
@@ -197,9 +194,13 @@ const Navbar = () => {
 
           {/* Drawer footer */}
           <div className="px-4 py-5 border-t border-primary/10 flex flex-col gap-3">
-            <button className="w-full py-3 bg-secondary text-white rounded-xl text-sm font-semibold hover:opacity-90 transition">
+            <Link
+              href="/get-quote"
+              onClick={() => setIsOpen(false)}
+              className="w-full py-3 flex justify-center bg-secondary text-white rounded-xl text-sm font-semibold shadow-sm hover:opacity-90 transition"
+            >
               Get Free Quote
-            </button>
+            </Link>
             <div className="grid grid-cols-2 gap-2">
               <a
                 href="tel:+97714445566"
