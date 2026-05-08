@@ -3,11 +3,19 @@
 import Image from "next/image";
 
 import { useState } from "react";
-import { faq } from "@/constants/faq";
+import { FAQItem, homeFaq } from "@/constants/faq";
 import { ChevronDown, Truck, Check } from "lucide-react";
 
-const FrequentlyAskedQuestions = () => {
+type FrequentlyAskedQuestionsProps = {
+  variant?: "default" | "compact";
+  items?: FAQItem[];
+};
+
+const FrequentlyAskedQuestions = ({
+  variant = "default", items = homeFaq
+}: FrequentlyAskedQuestionsProps) => {
     const [activeIndex, setActiveIndex] = useState<number | null>(0);
+    const data = items
 
     const toggle = (index: number) => {
         setActiveIndex(prev => (prev === index ? null : index));
@@ -15,7 +23,11 @@ const FrequentlyAskedQuestions = () => {
   return (
     <section
      id="frequently-asked-questions"  
-     className="w-full max-w-7xl mx-auto px-4 md:px-8 py-16"
+     className={`w-full mx-auto px-4 md:px-8 py-16 ${
+        variant === "compact"
+            ? "max-w-4xl"
+            : "max-w-7xl"
+        }`}
      aria-label="Frequently Asked Questions about house and office shifting in Kathmandu"
     >
         {/* Heading */}
@@ -27,8 +39,15 @@ const FrequentlyAskedQuestions = () => {
             Clear, honest answers to help you plan your move with confidence
             </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-10 items-start">
+        <div
+        className={`grid gap-10 items-start ${
+            variant === "default"
+            ? "md:grid-cols-2"
+            : "grid-cols-1"
+        }`}
+        >
             {/* Illustration Side */}
+            {variant === "default" && (
             <div className="relative">
                 <div className="bg-linear-to-br from-primary/10 to-transparent rounded-3xl p-10 shadow-xl">
                     <Image
@@ -54,15 +73,16 @@ const FrequentlyAskedQuestions = () => {
                         <Truck size={18} />
                     </div>
                 </div>
-            </div>
+            </div>)}
+
             {/* FAQ */}
-            <ul className="flex flex-col gap-4 text-foreground items-center">
-                {faq.map((item, i) => {
+            <ul className="flex flex-col gap-4 text-foreground w-full">
+                {data.map((item, i) => {
                     const isOpen = activeIndex === i;
                     return (
                     <li 
                     key={item.id} 
-                    className="border border-primary/20 rounded-xl overflow-hidden bg-white/60 backdrop-blur-md shadow-sm"
+                    className="w-full border border-primary/20 rounded-xl overflow-hidden bg-white/60 backdrop-blur-md shadow-sm"
                     >
                         {/* Question */}
                         <button
@@ -75,10 +95,9 @@ const FrequentlyAskedQuestions = () => {
 
                             <ChevronDown
                             size={20}
-                            className={`
-                                "transition-transform duration-300"
-                                ${isOpen && "rotate-180"}`
-                                }
+                            className={`transition-transform duration-300 ${
+                                isOpen ? "rotate-180" : ""
+                                }`}
                             />
                         </button>
                         {/* Answer */}
@@ -95,6 +114,7 @@ const FrequentlyAskedQuestions = () => {
                 )})}
             </ul>
         </div>
+        {variant === "default" && (
         <div className="text-center mt-12">
             <p className="text-sm text-foreground/60 mb-5">
                 Still unsure? Talk to our team directly.
@@ -102,7 +122,7 @@ const FrequentlyAskedQuestions = () => {
             <a href="tel:+977XXXXXXXXX" className="bg-secondary text-white px-6 py-3 rounded-xl shadow-md hover:scale-105 transition">
                 Call Now
             </a>
-        </div>
+        </div>)}
     </section>
   )
 }

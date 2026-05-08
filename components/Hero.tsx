@@ -1,9 +1,15 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+
 import Image from "next/image"
 import Button from "./Button";
 import CallNowButton from "./CallNowButton"
 import { Truck, Clock, ShieldCheck, Star, Lock, MapPin } from "lucide-react";
 
 const Hero = () => {
+    const router = useRouter();
+
   return (
     <section id="hero" className="w-full px-4 md:px-8 py-16">
         <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-10 md:gap-2">
@@ -51,7 +57,10 @@ const Hero = () => {
                     </div>
 
                     <div className="flex gap-10">
-                        <Button title="Get free quote" />
+                        <Button
+                        title="Get free quote"
+                        onClick={() => router.push("/get-quote?source=hero_cta")}
+                        />
                         <CallNowButton />
                     </div>
 

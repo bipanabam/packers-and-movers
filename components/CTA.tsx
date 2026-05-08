@@ -38,7 +38,7 @@ const CTA = () => {
                 {/* Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
                     <Link
-                    href="/quote"
+                    href="/get-quote"
                     className="flex items-center justify-center gap-2 px-8 py-2 bg-white text-primary font-semibold rounded-xl shadow-xl hover:scale-105 transition text-lg"
                     >
                         <ArrowDownToLine size={20} />

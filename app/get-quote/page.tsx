@@ -1,6 +1,6 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import { useState } from "react";
 import { Phone } from "lucide-react";
 
@@ -15,6 +15,9 @@ import {
   QuoteFormData
  } from "@/libs/validations/quote";
 import HowItWorks from "@/components/HowItWorks";
+import FrequentlyAskedQuestions from "@/components/FrequentlyAskedQuestions";
+import { quoteFaq } from "@/constants/faq";
+import UrgentCTA from "@/components/get-quote/UrgentCTA";
 
 const steps = [
   {
@@ -40,6 +43,7 @@ const steps = [
 ]
 const GetQuotePage = () => {
   const searchParams = useSearchParams();
+  const router = useRouter();
   const [formData, setFormData] = useState<QuoteFormData>({
     contact: {},
     move: {},
@@ -155,6 +159,14 @@ const GetQuotePage = () => {
                     );
                   })}
                 </div>
+                {activeStep > 1 && (
+                  <button
+                    onClick={() => router.push(`/get-quote?step=${activeStep - 1}`, {scroll: false})}
+                    className="text-sm text-primary mt-4 hover:underline"
+                  >
+                    ← Go back to previous step
+                  </button>
+                )}
               </div>
 
               {/* Description for the active step */}
@@ -232,11 +244,11 @@ const GetQuotePage = () => {
             {/* CTA card */}
             <div className="rounded-3xl bg-primary p-7">
               <h3 className="text-xl font-semibold text-white">
-                Need Help Quickly?
+                Need Immediate Help ?
               </h3>
 
               <p className="mt-2 text-sm text-white/70">
-                Speak directly with our moving experts.
+                Our experts are ready to assist you over the phone or WhatsApp right now.
               </p>
 
               <div className="mt-6 flex flex-col gap-3">
@@ -266,6 +278,8 @@ const GetQuotePage = () => {
       </div>
 
       <HowItWorks />
+      <FrequentlyAskedQuestions  variant="compact" items={quoteFaq} />
+      <UrgentCTA />
     </div>
   )
 }
