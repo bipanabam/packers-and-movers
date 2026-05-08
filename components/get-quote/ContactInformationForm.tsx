@@ -123,7 +123,6 @@ const ContactInformationForm = ({setFormData} : { setFormData: React.Dispatch<Re
           <p>Continue with Move Detail</p>
           <ArrowRight size={22} strokeWidth={1.5} />
         </button>
-        <span className="text-sm text-foreground/50">Your information is secure and never shared.</span>
     </form>
   )
 }

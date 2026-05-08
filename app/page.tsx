@@ -5,6 +5,7 @@ import FrequentlyAskedQuestions from "@/components/FrequentlyAskedQuestions";
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import InstantQuoteForm from "@/components/InstantQuoteForm";
+import MiniCTA from "@/components/MiniCTA";
 import ServicesCard from "@/components/ServicesCard";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
@@ -63,6 +64,8 @@ export default function Home() {
 
       {/* How It Works */}
       <HowItWorks />
+      <MiniCTA />
+
       {/* Why choose us */}
       <WhyChooseUs />
       {/* Customer Review */}

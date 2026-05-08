@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import { useState } from "react";
 import { faq } from "@/constants/faq";
 import { ChevronDown, Truck, Check } from "lucide-react";
@@ -29,9 +31,12 @@ const FrequentlyAskedQuestions = () => {
             {/* Illustration Side */}
             <div className="relative">
                 <div className="bg-linear-to-br from-primary/10 to-transparent rounded-3xl p-10 shadow-xl">
-                    <img
+                    <Image
                     src="/illustrations/moving.svg"
-                    alt="Moving illustration"
+                    alt="Professional packers and movers loading household goods into a truck"
+                    width={700}
+                    height={600}
+                    priority
                     className="w-full h-auto hover:scale-105 transition-transform duration-700"
                     />
                 </div>

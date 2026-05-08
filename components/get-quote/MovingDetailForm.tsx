@@ -149,7 +149,6 @@ const MovingDetailForm = ({setFormData} : { setFormData: React.Dispatch<React.Se
           <p>Continue to next step</p>
           <ArrowRight size={22} strokeWidth={1.5} />
         </button>
-        <span className="text-sm text-foreground/50">Step 2 of 4 — Takes less than 1 minute</span>
     </form>
   )
 }
