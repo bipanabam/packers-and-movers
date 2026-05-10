@@ -56,7 +56,7 @@ const TrustStrip = () => {
 
                 {/* Text */}
                 <div className="flex flex-col">
-                  <h3 className="text-2xl font-bold text-foreground leading-none">
+                  <h3 className="text-2xl font-bold text-secondary leading-none">
                     {item.title}
                   </h3>
 

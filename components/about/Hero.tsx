@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className="w-full">
         <div className="relative">
-            <div className="relative w-full h-80 md:h-125 overflow-hidden shadow-xl">
+            <div className="relative w-full h-115 md:h-125 overflow-hidden shadow-xl">
                 <Image
                     src="/assets/about.png"
                     alt="Professional packers and movers loading household goods into a truck"
