@@ -39,7 +39,7 @@ const MovingDetailForm = ({setFormData} : { setFormData: React.Dispatch<React.Se
       onSubmit={handleSubmit(handleMovingDetailFormSubmit)}
     >
         {/* Move Details */}
-        <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-7">
             <div className="flex flex-col gap-1.5">
                 <label htmlFor="movingType" className="text-foreground/70 text-sm font-medium">Moving Type</label>
                 <div className="relative">

@@ -45,7 +45,7 @@ const InventoryAndLocationForm = ({setFormData} : { setFormData: React.Dispatch<
                 <div className="bg-primary w-5 h-5 flex items-center justify-center shrink-0 rounded-full text-white" />
                 <p className="text-sm">Location Detail</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-7">
                 <div className="flex flex-col gap-1.5">
                     <label htmlFor="pickupLocation" className="text-foreground/70 text-sm font-medium">Pickup Location *</label>
                     <div className="relative">

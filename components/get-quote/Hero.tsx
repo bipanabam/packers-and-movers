@@ -13,11 +13,12 @@ const Hero = () => {
                 <div className="flex flex-col gap-6">
                     <div className="flex flex-col font-inter font-medium text-5xl">
                         <p className="text-foreground">Get a Free
-                            <span className="text-secondary"> Packers </span> 
+                            <span className="text-primary"> Packers </span> 
                             &
                         </p>
                         <p>
-                        Movers Quote in Minutes
+                            <span className="text-secondary"> Movers </span> 
+                         Quote in Minutes
                         </p>
                     </div>
                     <p className="text-sm font-normal font-sans tracking-wider text-foreground/50 leading-7">
