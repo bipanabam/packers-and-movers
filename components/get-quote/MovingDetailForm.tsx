@@ -10,7 +10,6 @@ import {
   propertySizes
 } from "@/libs/validations/quote";
 import { ArrowRight } from "lucide-react";
-import { p } from "framer-motion/m";
 
 const MovingDetailForm = ({setFormData} : { setFormData: React.Dispatch<React.SetStateAction<FormData>>}) => {
     const {

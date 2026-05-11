@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -25,6 +26,7 @@ const NAV_LINKS = [
 const Navbar = () => {
   const navRef = useRef<HTMLElement | null>(null);
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   useGSAP(() => {
     if (!navRef.current) return;
@@ -104,7 +106,12 @@ const Navbar = () => {
           {/* Desktop nav links */}
           <ul className="hidden md:flex items-center md:gap-4 lg:gap-8 md:text-xs lg:text-[15px] font-medium font-inter">
             {NAV_LINKS.map((link, i) => (
-              <NavItem key={link.href + i} href={link.href} label={link.label} active={link.href === "/"} />
+              <NavItem
+                key={link.href + i}
+                href={link.href}
+                label={link.label}
+                active={pathname === link.href}
+              />
             ))}
           </ul>
 
@@ -181,7 +188,7 @@ const Navbar = () => {
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                   className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium font-inter transition-colors ${
-                    link.href === "/"
+                    link.href === pathname
                       ? "bg-primary/10 text-primary"
                       : "text-foreground/70 hover:bg-primary/5 hover:text-primary"
                   }`}

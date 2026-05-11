@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Logo from "./icons/Logo";
 import { MapPinIcon, PhoneIcon, MailIcon } from "lucide-react";
 import WhatsAppIcon from "./icons/WhatsAppIcon";
 import FacebookIcon from "./icons/FacebookIcon";
@@ -14,9 +14,9 @@ const Footer = () => {
             <div className="flex flex-col items-center justify-center">
                 {/* Name and description */}
                 <div className="flex flex-col items-center justify-center gap-3 h-full text-center">
-                    <h1 className="font-mono text-2xl font-bold tracking-[-0.04em] text-primary">
-                    Nepal Packers & Movers
-                    </h1>
+                   <Link href="/" className="flex items-center">
+                        <Logo />
+                    </Link>
                     <div className="flex flex-col items-center justify-center font-inter text-sm font-medium tracking-widest text-foreground/50">
                         <p>
                             Precision Logistics & Expert Moving 
@@ -56,7 +56,9 @@ const Footer = () => {
                 <p className="font-sans text-xl font-bold tracking-widest text-primary">
                     Company
                 </p>
-                <Link href="/" className="text-foreground/50 hover:text-secondary hover:scale-105 transition-colors">
+                <Link href="/about"
+                    className="text-foreground/50 hover:text-secondary hover:scale-105 transition-colors"
+                >
                     About
                 </Link>
                 <Link href="/" className="text-foreground/50 hover:text-secondary hover:scale-105 transition-colors">

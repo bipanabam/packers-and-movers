@@ -41,9 +41,9 @@ export const quoteFaq: FAQItem[] = [
   },
   {
     id: 2,
-    title: "How soon will your team contact me?",
+    title: "How quickly can I get a moving quote?",
     description:
-      "We usually respond within 10–15 minutes during business hours. For urgent moving requests in Kathmandu Valley, our coordinators may contact you even faster through phone or WhatsApp.",
+      "We usually respond to quote requests within 10–15 minutes during business hours. For urgent house shifting or office relocation services in Kathmandu Valley, our team may contact you immediately via phone or WhatsApp.",
   },
   {
     id: 3,
@@ -68,5 +68,51 @@ export const quoteFaq: FAQItem[] = [
     title: "Can I reschedule my moving date?",
     description:
       "Yes. If your plans change, simply inform our team in advance and we will help reschedule your move based on the next available slot.",
+  },
+];
+
+
+export const contactFaq: FAQItem[] = [
+  {
+    id: 1,
+    title: "How quickly will you respond?",
+    description:
+      "We usually respond within 10–15 minutes during business hours. For urgent moving requests in Kathmandu Valley, our coordinators may contact you even faster through phone or WhatsApp.",
+  },
+  {
+    id: 2,
+    title: "Can I call directly?",
+    description:
+      "Yes, you can call directly for discussing services upfront or any queries related to shifting and costs details.",
+  },
+  {
+    id: 3,
+    title: "Can I book a same-day moving service?",
+    description:
+      "Yes, same-day moving and urgent relocation services are available depending on truck and staff availability. Contact our team as early as possible for priority scheduling within Kathmandu Valley.",
+  },
+  {
+    id: 4,
+    title: "Do you provide house shifting services in Kathmandu?",
+    description:
+      "Yes, we provide professional house shifting services across Kathmandu, Lalitpur, and Bhaktapur. Our team handles packing, loading, transportation, unloading, and setup for safe and hassle-free relocation.",
+  },
+  {
+    id: 5,
+    title: "Can I reschedule my moving date?",
+    description:
+      "Yes, you can reschedule your moving date by informing our team in advance. We will help arrange the next available date and time that fits your relocation schedule.",
+  },
+  {
+    id: 6,
+    title: "How do you protect fragile items during moving?",
+    description:
+      "Our trained movers use high-quality packing materials such as bubble wrap, foam sheets, stretch film, reinforced boxes, and protective blankets to safely transport fragile household and office items.",
+  },
+  {
+    id: 7,
+    title: "What areas do you serve in Nepal?",
+    description:
+      "We mainly serve Kathmandu, Lalitpur, Bhaktapur, and surrounding areas. We also handle intercity relocation and long-distance moving services across Nepal based on customer requirements.",
   },
 ];
