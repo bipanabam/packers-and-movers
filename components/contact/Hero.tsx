@@ -7,13 +7,12 @@ const Hero = () => {
     <section className="w-full bg-linear-to-b from-primary/5 via-background to-background">
       <div className="mx-auto max-w-7xl px-5 md:px-10 py-10 md:py-16">
         <div className="flex flex-col items-center text-center">
-            {/* Badge */}
-            <span className="rounded-full bg-secondary/10 px-4 py-1 text-secondary font-medium font-inter text-xs tracking-wide border border-secondary/20 shadow-sm">
-            Contact Pashupati Packers & Movers
-            </span>
-
+          {/* Badge */}
+          <span className="rounded-full bg-secondary/10 px-4 py-1 text-secondary font-medium font-inter text-xs tracking-wide border border-secondary/20 shadow-sm">
+          Contact Pashupati Packers & Movers
+          </span>
           {/* Heading */}
-          <h1 className="mt-6 max-w-4xl font-inter text-4xl md:text-6xl font-semibold tracking-tight text-foreground">
+          <h1 className="mt-6 max-w-4xl font-inter text-4xl md:text-5xl font-semibold tracking-tight text-foreground">
             Get in Touch With Trusted Packers and Movers in Kathmandu
           </h1>
 

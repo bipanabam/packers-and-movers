@@ -1,5 +1,8 @@
 "use client";
 
+import { useState } from "react";
+import { Truck, Clock3, MapPin } from "lucide-react";
+
 const cities = [
   { name: "Kathmandu", x: 630.4, y: 340.5, main: true },
   { name: "Lalitpur", x: 640.4, y: 374.5 },
@@ -20,8 +23,10 @@ const connections = [
 ];
 
 const NepalCoverageMap = () => {
+  const [activeCity, setActiveCity] = useState<string | null>(null);
+
   return (
-    <div className="relative w-full h-100 md:h-130 rounded-2xl overflow-hidden bg-slate-700 shadow-md">
+    <div className="relative w-full h-100 md:h-130 rounded-2xl overflow-hidden bg-linear-to-br from-slate-800 via-slate-700 to-slate-900 shadow-md">
       <svg viewBox="0 0 1000 569" className="w-full h-full" fill="#547A95">
         <image
           href="/assets/np.svg"
@@ -79,6 +84,8 @@ const NepalCoverageMap = () => {
             key={i} 
             filter="url(#glow)"
             className="cursor-pointer"
+            onMouseEnter={() => setActiveCity(city.name)}
+            onMouseLeave={() => setActiveCity(null)}
           >
           {/* Outer pulse */}
           <circle
@@ -90,8 +97,12 @@ const NepalCoverageMap = () => {
           >
             <animate
               attributeName="r"
-              values="4;10;4"
-              dur="1.8s"
+              values={
+                city.main
+                  ? "8;18;8"
+                  : "5;12;5"
+              }
+              dur="2s"
               repeatCount="indefinite"
             />
             <animate
@@ -106,7 +117,7 @@ const NepalCoverageMap = () => {
           <circle
             cx={city.x}
             cy={city.y}
-            r="6.5"
+            r={city.name === 'Kathmandu' ? "8" : "6.5"}
             fill={city.main ? "#f97316" : "#38bdf8"}
           />
 
@@ -124,14 +135,92 @@ const NepalCoverageMap = () => {
           >
             {city.name}
           </text>
+
+          {/* Tooltip */}
+          {activeCity === city.name && (
+            <foreignObject
+              x={city.x - 45}
+              y={city.y - 75}
+              width="150"
+              height="70"
+            >
+              <div className="rounded-xl border border-white/10 bg-black/70 px-3 py-2 text-white shadow-xl">
+                <p className="text-sm font-semibold">
+                  {city.name}
+                </p>
+
+                <p className="mt-1 text-[10px] text-white/70">
+                  Available within 24 hrs
+                </p>
+              </div>
+            </foreignObject>
+          )}
         </g>
         ))}
       </svg>
 
-      {/* Overlay */}
-      <div className="absolute bottom-4 left-4 text-secondary bg-white/80 rounded-lg px-4 py-2 shadow-lg backdrop-blur-2xl hover:scale-105">
-        <p className="text-xs text-foreground/80">Available in</p>
-        <p className="text-sm font-semibold text-secondary">20+ cities</p>
+      {/* Top Badge */}
+      <div className="absolute left-5 top-5 rounded-full border border-white/10 bg-white/10 px-4 py-2 backdrop-blur-md">
+        <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/70">
+          Nationwide Coverage
+        </p>
+      </div>
+      {/* Trust Cards */}
+      <div className="absolute bottom-5 left-5 right-5 grid grid-cols-2 lg:grid-cols-1 gap-3">
+        {/* <div className="rounded-2xl border border-white/10 bg-white/10 p-4 backdrop-blur-md w-fit">
+          <div className="flex items-center gap-3">
+            <Truck
+              size={18}
+              className="text-secondary"
+            />
+
+            <div>
+              <p className="text-sm font-semibold text-white">
+                500+
+              </p>
+
+              <p className="text-xs text-white/70">
+                Successful Moves
+              </p>
+            </div>
+          </div>
+        </div> */}
+
+        <div className="rounded-2xl border border-white/10 bg-white/10 p-4 backdrop-blur-md w-fit">
+          <div className="flex items-center gap-3">
+            <Clock3
+              size={18}
+              className="text-secondary"
+            />
+            <div>
+              <p className="text-sm font-semibold text-white">
+                7 Days
+              </p>
+
+              <p className="text-xs text-white/70">
+                Availability
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="rounded-2xl border border-white/10 bg-white/10 p-4 backdrop-blur-md w-fit">
+          <div className="flex items-center gap-3">
+            <MapPin
+              size={18}
+              className="text-secondary"
+            />
+
+            <div>
+              <p className="text-sm font-semibold text-white">
+                20+
+              </p>
+
+              <p className="text-xs text-white/70">
+                Cities Covered
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ const AreasWeServe = () => {
      <section id="areas-we-serve" className="w-full mx-auto px-4 md:px-8 py-16">
         <div className="flex flex-col-reverse lg:flex-row items-center md:items-start justify-center gap-8 md:gap-5">
             {/* Left */}
-            <div className="w-full md:flex-1 relative ">
+            <div className="w-full md:flex-1 relative">
                 <NepalCoverageMap />
             </div>
             {/* Right */}
