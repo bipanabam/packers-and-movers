@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="mx-auto max-w-7xl px-5 md:px-10 py-10 md:py-16">
         <div className="flex flex-col items-center text-center">
             {/* Badge */}
-            <span className="rounded-full bg-secondary/10 px-4 py-1 text-secondary font-medium font-inter text-xs tracking-wide border border-primary/10 shadow-sm">
+            <span className="rounded-full bg-secondary/10 px-4 py-1 text-secondary font-medium font-inter text-xs tracking-wide border border-secondary/20 shadow-sm">
             Contact Pashupati Packers & Movers
             </span>
 
