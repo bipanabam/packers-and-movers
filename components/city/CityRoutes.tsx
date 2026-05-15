@@ -15,7 +15,7 @@ const CityRoutes = ({
 }) => {
   return (
     <section className="bg-primary/5 py-20">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl px-8">
         {/* Heading */}
         <div className="max-w-2xl">
           <span className="rounded-full border border-secondary/20 bg-secondary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-secondary">

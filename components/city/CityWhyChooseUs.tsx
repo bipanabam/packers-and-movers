@@ -48,7 +48,7 @@ const CityWhyChooseUs = ({
 }) => {
   return (
     <section className="py-20">
-      <div className="mx-auto grid max-w-7xl gap-14 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+      <div className="mx-auto grid max-w-7xl gap-14 px-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         {/* IMAGE */}
         <div className="relative overflow-hidden rounded-4xl">
           <div className="relative h-140 overflow-hidden rounded-4xl">

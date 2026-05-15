@@ -73,7 +73,7 @@ const CityProcess = () => {
         transform: scaleX(0);
       }`}</style>
       
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl px-8">
         <h2 className="font-inter text-center text-3xl font-semibold tracking-tight md:text-4xl">
           Our Moving Process
         </h2>

@@ -9,7 +9,7 @@ const CityAreas = ({
 }) => {
   return (
     <section className="bg-primary py-16 text-white">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-8">
         <h2 className="font-inter text-3xl font-semibold tracking-tight md:text-4xl">
           Areas We Cover in {data.city}
         </h2>

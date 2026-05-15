@@ -27,6 +27,13 @@ export interface CityDataType {
     image: string;
   }[];
 
+  pricing: {
+    title: string;
+    price: string;
+    features: string[];
+    highlighted?: boolean;
+  }[];
+
   gallery: {
     image: string;
     alt: string;

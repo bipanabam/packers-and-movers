@@ -1,33 +1,13 @@
 import Image from "next/image";
-import Link from "next/link";
 import {
   Phone,
-  MessageCircle,
-  Clock3,
-  ShieldCheck,
   MapPin,
+  ShieldCheck,
+  Clock3
 } from "lucide-react";
 import WhatsAppIcon from "../icons/WhatsAppIcon";
 
 import { CityDataType } from "@/types/city";
-
-const stats = [
-  {
-    label: "Successful Moves",
-    value: "500+",
-    icon: ShieldCheck,
-  },
-  {
-    label: "Availability",
-    value: "7 Days",
-    icon: Clock3,
-  },
-  {
-    label: "Response Time",
-    value: "15 Min",
-    icon: Phone,
-  },
-];
 
 const CityHero = ({
   data,
@@ -36,7 +16,7 @@ const CityHero = ({
 }) => {
   return (
     <section className="relative overflow-hidden bg-linear-to-b from-primary/5 via-background to-background">
-      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-10 md:py-14 lg:grid-cols-2 lg:items-center">
+      <div className="mx-auto grid max-w-7xl gap-10 px-8 py-10 md:py-14 lg:grid-cols-2 lg:items-center">
         <div>
           <div className="flex flex-col items-start w-full gap-4">
             <span className="rounded-full border border-secondary/20 bg-secondary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-secondary">
@@ -67,30 +47,36 @@ const CityHero = ({
               </a>
             </div>
           </div>
+          
+          <div className="mt-8 flex flex-wrap items-center gap-4 text-sm text-foreground/60">
+            <div className="flex items-center gap-2">
+              <ShieldCheck
+                size={16}
+                className="text-secondary"
+              />
+              Verified Movers
+            </div>
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-3">
-            {stats.map((item) => {
-              const Icon = item.icon;
+            <div className="h-4 w-px bg-primary/10" />
 
-              return (
-                <div
-                  key={item.label}
-                  className="rounded-2xl border border-primary/10 bg-white p-4 shadow-sm"
-                >
-                  <Icon className="text-secondary" size={18} />
+            <div className="flex items-center gap-2">
+              <Clock3
+                size={16}
+                className="text-secondary"
+              />
+              Same-Day Available
+            </div>
 
-                  <p className="mt-3 text-xl font-semibold">
-                    {item.value}
-                  </p>
+            <div className="h-4 w-px bg-primary/10" />
 
-                   <p className="text-xs text-foreground/60">
-                    {item.label}
-                  </p>
-                </div>
-              );
-            })}
+            <div className="flex items-center gap-2">
+              <MapPin
+                size={16}
+                className="text-secondary"
+              />
+              Serving All {data.city}
+            </div>
           </div>
-
           <div className="mt-8 flex flex-wrap gap-2">
             {data.areas.slice(0, 8).map((area: string) => (
               <div
