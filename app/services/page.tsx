@@ -1,14 +1,14 @@
-import ServiceAreas from "@/components/service/ServiceAreas";
-import ServiceCTA from "@/components/service/ServiceCTA";
-import ServiceFAQ from "@/components/service/ServiceFAQ";
-import ServiceGrid from "@/components/service/ServiceGrid";
-import ServiceHero from "@/components/service/ServiceHero";
-import ServiceHighlights from "@/components/service/ServiceHighlights";
-import ServiceIncluded from "@/components/service/ServiceIncluded";
-import ServicePricing from "@/components/service/ServicePricing";
-import ServiceProcess from "@/components/service/ServiceProcess";
-import ServiceTestimonials from "@/components/service/ServiceTestimonials";
-import ServiceWhyChooseUs from "@/components/service/ServiceWhyChooseUs";
+import ServiceAreas from "@/components/services/ServiceAreas";
+import ServiceCTA from "@/components/services/ServiceCTA";
+import ServiceFAQ from "@/components/services/ServiceFAQ";
+import ServiceGrid from "@/components/services/ServiceGrid";
+import ServiceHero from "@/components/services/ServiceHero";
+import ServiceHighlights from "@/components/services/ServiceHighlights";
+import ServiceIncluded from "@/components/services/ServiceIncluded";
+import ServicePricing from "@/components/services/ServicePricing";
+import ServiceProcess from "@/components/services/ServiceProcess";
+import ServiceTestimonials from "@/components/services/ServiceTestimonials";
+import ServiceWhyChooseUs from "@/components/services/ServiceWhyChooseUs";
 
 const ServicePage = () => {
   return (

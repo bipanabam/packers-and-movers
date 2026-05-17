@@ -28,8 +28,8 @@ const stats = [
 
 const ServiceHero = () => {
   return (
-    <section className="w-full relative overflow-hidden bg-linear-to-b from-primary/5 via-background to-background">
-        <div className="mx-auto grid gap-14 lg:grid-cols-2 lg:items-center px-10 lg:px-18 py-10 lg:py-14">
+    <section className="w-full px-10 lg:px-18 py-10 lg:py-14">
+        <div className="mx-auto grid gap-14 lg:grid-cols-2 lg:items-center">
             <div>
                 <span className="rounded-full border border-secondary/20 bg-secondary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-secondary">
                     Trusted Packers & Movers
