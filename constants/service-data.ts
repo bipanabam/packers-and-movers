@@ -18,7 +18,7 @@ export const serviceData: Record<
       "Safe & Reliable House Shifting in Kathmandu",
 
     heroDescription:
-      "Professional house shifting service for apartments, flats and family homes with secure packing and transportation.",
+      "Professional house shifting service for apartments, flats and family homes with secure packing and transportation",
 
     heroImage:
       "/assets/services/house-shifting.png",
@@ -83,22 +83,38 @@ export const serviceData: Record<
     pricing: [
       {
         title: "1 BHK Apartment",
-
         price: "NPR 6,000+",
-
         description:
           "Suitable for studio and 1BHK apartments.",
+        features: [
+          "2 Packing Staff",
+          "1 Mini Truck",
+          "Basic Packing Material",
+        ],
       },
 
       {
         title: "2 BHK Apartment",
-
         price: "NPR 12,000+",
-
         description:
           "Complete family relocation package.",
-
+         features: [
+          "4 Packing Staff",
+          "1 Large Truck",
+          "Premium Packing Material",
+        ],
         highlighted: true,
+      },
+      {
+        title: "Custom Move",
+        price: "Custom Quote",
+        description:
+          "Pay as you use the services.",
+        features: [
+          "IT Equipment Packing",
+          "Furniture Dismantling",
+          "Weekend Relocation",
+        ],
       },
     ],
 
@@ -110,28 +126,53 @@ export const serviceData: Record<
         answer:
           "Yes. Same-day house shifting is available based on truck availability.",
       },
+      {
+        question: 
+            "Do you move outside Kathmandu?",
+        answer:
+            "Yes. We provide nationwide moving services including Pokhara, Chitwan, Butwal, Dharan, Biratnagar and more.",
+      },
+      {
+        question: 
+            "How do you protect fragile items during moving?",
+        answer:
+            "Our trained movers use high-quality packing materials such as bubble wrap, foam sheets, stretch film, reinforced boxes, and protective blankets to safely transport fragile household and office items.",
+      }
     ],
 
     testimonials: [
       {
-        name: "Rajesh KC",
-
+        name: "Rajesh K.C.",
         review:
-          "Smooth relocation from Baneshwor to Lalitpur.",
-
-        location: "Kathmandu",
+          "Very professional team. Shifted our house safely and on time. Highly recommend for stress-free moving.",
+        location: "Kathmandu, Nepal",
+      },
+       {
+        name: "Celna Mahrzn",
+        review:
+          "Really happy with their work. Everything was packed neatly and delivered on time without any damage.",
+        location: "Kathmandu, Nepal",
       },
     ],
 
     recentMoves: [
       {
         title:
-          "2BHK Apartment Shift in Baneshwor",
+          "2BHK Apartment Shift in Sankhamul",
 
         image:
           "/assets/gallery/house-shifting-1.jpeg",
 
-        location: "Kathmandu",
+        location: "Sankhamul, Kathmandu",
+      },
+      {
+        title:
+           "Family Relocation Service in Koteshwor",
+
+        image:
+          "/assets/gallery/house-shifting-2.jpeg",
+
+        location: "Koteshwor, Kathmandu",
       },
     ],
 
@@ -194,10 +235,10 @@ export const serviceData: Record<
       "Safe Bike Transport Across Nepal",
 
     heroDescription:
-      "Secure motorcycle and scooter transportation with scratch protection and professional loading.",
+      "Secure motorcycle and scooter transportation with scratch protection and professional loading",
 
     heroImage:
-      "/assets/services/bike-transport.jpeg",
+      "/assets/services/bike-transport.jpg",
 
     seoTitle:
       "Bike Transport Service in Nepal",

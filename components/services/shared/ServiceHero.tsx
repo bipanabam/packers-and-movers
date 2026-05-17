@@ -22,7 +22,7 @@ const ServiceHero = ({
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-foreground/60">
-            {data.heroDescription}
+            {data.heroDescription}.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">

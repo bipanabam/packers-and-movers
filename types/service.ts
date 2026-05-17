@@ -42,6 +42,7 @@ export interface ServiceDataType {
   pricing: {
     title: string;
     price: string;
+    features: string[];
     description: string;
     highlighted?: boolean;
   }[];

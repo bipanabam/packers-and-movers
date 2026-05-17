@@ -36,6 +36,16 @@ const services = [
       "Premium Materials",
     ],
   },
+  {
+    title: "Bike Transport",
+    slug: "/services/bike-transport",
+    image: "/assets/services/bike-transport.jpg",
+    desc: "Bike transport service with multi-layer packing protection.",
+    features: [
+      "Fragile Protection",
+      "Premium Materials",
+    ],
+  },
 ];
 
 const ServiceGrid = () => {
