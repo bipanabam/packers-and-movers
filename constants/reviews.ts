@@ -28,11 +28,12 @@ export const customerReviews = [
     },
     {
         id: 4,
-        name: "Rajesh K.C.", 
-        address: "Kathmandu, Nepal", 
+        name: "Suman Ghimire",
+        address: "Pokhara, Nepal", 
         image: "/assets/customer-1.jpg", 
-        review: "Very professional team. Shifted our house safely and on time. Highly recommend for stress-free moving.",
-        moveType: "2BHK Home Shift",
+        review:
+        "Smooth office relocation with excellent coordination and careful handling.",
+        moveType: "Office Shift",
         rating: 5 
     },
 

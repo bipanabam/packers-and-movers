@@ -16,7 +16,7 @@ import CityFAQ from "@/components/city/CityFAQ";
 import CityLandmarks from "@/components/city/CityLandmarks";
 import CityStickyCTA from "@/components/city/CityStickyCTA";
 import CityTrustStats from "@/components/city/CityTrustStats";
-import CitySEOIntro from "@/components/areas-we-serve/CitySEOIntro";
+import CitySEOIntro from "@/components/city/CitySEOIntro";
 import CityMovingChallenges from "@/components/city/CityMovingChallenges";
 
 type PageProps = {

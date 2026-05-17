@@ -137,3 +137,17 @@ export const areaWeServeFaq: FAQItem[] = [
       "Yes. We handle long-distance house shifting and office relocation across Nepal.",
   },
 ];
+
+
+export const serviceFaq: FAQItem[] = [
+  {
+    id: 1,
+    title: "Do you provide same-day shifting?",
+    description: "Yes, same-day relocation is available depending on truck and staff availability.",
+  },
+  {
+    id: 2,
+    title: "Do you provide packing materials?",
+    description: "Yes, we provide bubble wrap, cartons, stretch film and protective materials.",
+  },
+];

@@ -23,7 +23,7 @@ const FrequentlyAskedQuestions = ({
   return (
     <section
      id="frequently-asked-questions"  
-     className={`w-full mx-auto px-4 md:px-8 py-16 ${
+     className={`w-full mx-auto px-8 md:px-10 py-16 ${
         variant === "compact"
             ? "max-w-4xl"
             : "max-w-7xl"
